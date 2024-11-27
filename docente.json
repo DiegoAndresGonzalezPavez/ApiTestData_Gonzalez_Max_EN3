@@ -1,0 +1,112 @@
+{
+    "asistencias": [
+      {
+        "id": 1,
+        "rut_participante": "12345678-9",
+        "evento_id": 101,
+        "fecha": "2024-11-26",
+        "hora_registro": "09:00",
+        "estado_asistencia": "presente",
+        "observaciones": "Llegó a tiempo"
+      },
+      {
+        "id": 2,
+        "rut_participante": "98765432-1",
+        "evento_id": 102,
+        "fecha": "2024-11-26",
+        "hora_registro": "09:15",
+        "estado_asistencia": "tardanza",
+        "observaciones": "Llegó tarde por tráfico"
+      }
+    ],
+    "clases": [
+      {
+        "id": 1,
+        "asignatura": "Matemáticas",
+        "fecha": "2024-11-26",
+        "profesor": "Juan Pérez",
+        "descripcion": "Clase sobre álgebra",
+        "imagen": "matematicas.jpg",
+        "correo": "juan.perez@ejemplo.com",
+        "codigoQR": "codigo-matematicas"
+      }
+    ],
+    "eventos": [
+      {
+        "id": 101,
+        "nombre": "Conferencia de IA",
+        "fecha": "2024-11-26",
+        "lugar": "Auditorio principal",
+        "descripcion": "Evento sobre inteligencia artificial",
+        "imagen": "ia.jpg",
+        "docente_id": 1,
+        "capacidad_maxima": 100,
+        "tipo_evento": "conferencia",
+        "estado": "programado"
+      }
+    ],
+    "notificaciones": [
+      {
+        "id": 1,
+        "evento_id": 101,
+        "tipo": "registro",
+        "mensaje": "Te has registrado exitosamente",
+        "fecha": "2024-11-26",
+        "leida": false
+      },
+      {
+        "id": 2,
+        "evento_id": 102,
+        "tipo": "recordatorio",
+        "mensaje": "El evento empieza en 1 hora",
+        "fecha": "2024-11-26",
+        "leida": true
+      }
+    ],
+    "participantes": [
+      {
+        "rut": "12345678-9",
+        "nombre": "Carlos López",
+        "correo": "carlos.lopez@ejemplo.com",
+        "telefono": "987654321",
+        "institucion": "Universidad A",
+        "eventos_registrados": [101, 102]
+      },
+      {
+        "rut": "98765432-1",
+        "nombre": "María Gómez",
+        "correo": "maria.gomez@ejemplo.com",
+        "eventos_registrados": [101]
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "nombre": "Admin",
+        "correo": "admin@ejemplo.com",
+        "contrasena": "admin123",
+        "rut": "11111111-1",
+        "isactive": true,
+        "imagenUrl": "admin.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Usuario",
+        "correo": "usuario@ejemplo.com",
+        "contrasena": "usuario123",
+        "rut": "22222222-2",
+        "isactive": false
+      }
+    ],
+    "usersNuevos": [
+      {
+        "nombre": "Nuevo Usuario",
+        "correo": "nuevo.usuario@ejemplo.com",
+        "contrasena": "nuevopass",
+        "rut": "33333333-3",
+        "isactive": true,
+        "imagenUrl": "nuevo.jpg"
+      }
+    ]
+  }
+  
